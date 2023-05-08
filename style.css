@@ -1,0 +1,388 @@
+* {
+    padding       : 0;
+    margin        : 0;
+    box-sizing    : border-box;
+    font-family   : var(--primary-font);
+    /* font-family:  */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+:root {
+    --primary-font  : 'Roboto', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #c9c097;
+    font-family     : var(--primary-font);
+}
+
+.wrapper {
+    /* background         : linear-gradient(120deg, #fffffe 60%, #11dafdc4 60%); */
+    background-color: #feffff;
+    width           : 300px;
+    height          : 530px;
+    margin          : 0 auto;
+    margin-top      : 40px;
+    padding         : 15px;
+    border-radius   : 20px;
+}
+
+.header {
+    display        : flex;
+    justify-content: space-between;
+    margin-top     : 30px;
+}
+
+.title {
+    font-size    : 1.7rem;
+    font-family  : var(--primary-font);
+    color        : rgb(44, 42, 42);
+    margin-bottom: 8px;
+}
+
+
+.header__date {
+    width  : 40px;
+    padding: 9px;
+    border : none;
+    color  : grey;
+
+}
+
+.date__display {
+    font-size     : .6rem;
+    font-weight   : 400;
+    padding-bottom: 20px;
+    color         : grey;
+}
+
+.search_container {
+    width                : 100%;
+    display              : grid;
+    grid-template-columns: 80% 50px;
+    justify-content      : center;
+    align-items          : center;
+    text-align           : center;
+
+}
+
+.search_container input,
+button {
+    padding: 10px;
+    border : none;
+}
+
+.search_container input {
+    background-color: #a7c9ee;
+    border-radius   : 4px 0px 0 15px;
+    outline         : none;
+    font-size       : 1rem;
+    font-family     : var(--primary-font);
+    font-weight     : 400;
+    color           : rgb(95, 94, 94);
+}
+
+.search_container button {
+    background-color: #3E9BFD;
+    border-radius   : 0px 15px 4px 0px;
+    outline         : none;
+    font-size       : 1rem;
+    cursor          : pointer;
+}
+
+.search_container .fa-search {
+    color: white;
+    ;
+}
+
+.nav_list {
+    display        : flex;
+    justify-content: space-around;
+    padding-top    : 20px;
+    padding-bottom : 20px;
+    height         : 75px;
+
+
+}
+
+.nav_list .undone,
+.meetings,
+.consummation {
+    /* background-color   : rgba(16, 184, 196, 0.904); */
+    padding      : 9px;
+    font-size    : .9rem;
+    border-radius: 11px;
+    font-family  : 500;
+    cursor       : pointer;
+
+    /* width           : 80px; */
+}
+
+.nav_list .undone {
+    background-color: #3E9BFD;
+    color           : white;
+
+}
+
+.undone:hover {
+    background-color: #a7c9ee;
+    color           : black;
+}
+
+.meetings:hover {
+    background-color: #a7c9ee;
+    color           : black;
+}
+
+.consummation:hover {
+    background-color: #a7c9ee;
+    color           : black;
+}
+
+.todo__details {
+    background-color           : rgb(255, 255, 255);
+    border-radius              : 10px;
+    padding                    : 8px 6px;
+    display                    : grid;
+    grid-template-columns      : 10% 1fr;
+    /* justify-content         : space-between; */
+    align-items                : center;
+    margin-bottom              : 10px;
+    /* border                  : 1px solid #219dbc31; */
+    box-shadow                 : 4px 4px 4px 4px #66686821;
+}
+
+.todo__details .cirle {
+    color           : #2b70b9;
+    background-color: #2b70b9;
+    border-radius   : 50%;
+    height          : 8px;
+    width           : 8px;
+}
+
+.todo_body {
+    display              : grid;
+    grid-template-columns: 75% 1fr;
+    justify-content      : space-between;
+    gap                  : 10px;
+
+}
+
+.toto_title {
+    font-size  : .9rem;
+    font-family: var(--primary-font);
+    font-weight: 500;
+}
+
+.todo_time {
+    font-size: .7rem;
+    color    : rgb(71, 65, 65);
+}
+
+.todo_comment {
+    font-size    : 11px;
+    color        : grey;
+    margin-bottom: 0;
+}
+
+.material-symbols-outlined {
+    color        : #3E9BFD;
+    font-size    : 1.5rem;
+    margin-bottom: 0;
+}
+
+
+.add_todoList {
+    width           : 300px;
+    background-color: #3E9BFD;
+    height          : 60px;
+    padding         : 10px;
+    align-items     : center;
+    justify-content : center;
+    text-align      : center;
+    display         : flex;
+    border-radius   : 20px;
+    margin          : 0px auto;
+    margin-top      : -60px;
+    font-size       : 16px;
+    color           : white;
+    font-family     : var(--primary-font);
+    cursor          : pointer;
+}
+
+.add_todoList .material-symbols-outlined {
+    color       : white;
+    margin-right: 6px;
+    font-size   : 18px;
+
+}
+
+.add_todoList:hover {
+    background-color      : #2b70b9;
+    /* outline            : none; */
+    border                : none;
+    /* color              : black */
+}
+
+
+/*! Add New Task Page Styling Start Here  */
+
+.container {
+    background-color      : rgb(36, 113, 255);
+    width                 : 300px;
+    display               : flex;
+    margin                : 10px -15px;
+    align-items           : center;
+    /* justify-content    : center; */
+    padding               : 15px;
+    padding-top           : 8px;
+    height                : 410px;
+    border-radius         : 37px 37px 0 0;
+    text-align            : center;
+    flex-direction        : column;
+}
+
+.line {
+    width                 : 25px;
+    height                : 3px;
+    background-color      : white;
+    text-align            : center;
+    margin-top            : 5px;
+    margin-bottom         : 20px;
+    /* justify-content    : center; */
+    /* align-items        : center; */
+    border-radius         : 2px;
+}
+
+#new_task {
+    padding            : 10px;
+    background-color   : rgb(36, 113, 255);
+    /* color           : white; */
+    border             : none;
+    width              : 250px;
+    border-left        : 2px solid white;
+    outline            : none;
+}
+
+#new_task::placeholder {
+    color         : rgba(255, 255, 255, 0.514);
+    font-size     : 18px;
+    font-family   : var(--primary-font);
+    font-weight   : 400;
+    letter-spacing: 0.5px;
+}
+
+#new_task:hover {
+    outline: none;
+}
+
+.nav_suggestion {
+    display: grid;
+
+    grid-template-columns         : 85px 85px 85px;
+    /* margin-top                 : 25px; */
+    column-gap                    : 5px;
+    row-gap                       : 10px;
+    /* width                      : 100%; */
+    /* vertical-align             : top; */
+    text-align                    : center;
+    align-items                   : center;
+    justify-content               : center;
+    cursor                        : pointer;
+    margin-bottom                 : 20px;
+    margin-top                    : 23px;
+}
+
+.meeting {
+    padding         : 8px 6px;
+    background-color: #D9E0BC;
+    border-radius   : 8px;
+    border          : none;
+}
+
+.review {
+    padding         : 8px;
+    background-color: rgb(222, 209, 252);
+    border-radius   : 8px;
+    border          : none;
+}
+
+.marketing {
+    padding         : 8px 6px;
+    background-color: #F6CBCC;
+    border-radius   : 8px;
+    border          : none;
+}
+
+.design_project {
+    padding         : 8px 6px;
+    background-color: #F6CBCC;
+    border-radius   : 8px;
+    border          : none;
+
+
+}
+
+.design {
+    padding         : 1px 3px;
+    background-color: #ebebeb;
+    border-radius   : 8px;
+    border          : none;
+}
+
+.design span {
+    margin-top: 4px;
+}
+
+.design .material-symbols-outlined {
+    text-align: center;
+    color     : #2b70b9;
+    padding   : 0;
+
+}
+
+.first_line {
+    width           : 300px;
+    height          : 1px;
+    background-color: rgba(255, 255, 255, 0.26);
+    margin-top      : 10px;
+
+}
+
+.priority {
+    width             : 100%;
+    margin-top        : 25px;
+    /* justify-content: start; */
+    text-align        : start;
+    font-family       : var(--primary-font);
+    color             : white;
+    letter-spacing    : .2px;
+
+}
+
+.checkbox_container {
+    margin-top           : 10px;
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width                : 300px;
+    vertical-align       : top;
+
+
+}
+
+.checkbox_container label {
+    font-size  : 8px;
+    color      : white;
+    font-family: var(--primary-font);
+
+}
+
+input[type="radio"] {
+    font         : inherit;
+    color        : currentColor;
+    width        : 1.80em;
+    height       : 2.15em;
+    border       : 0.15em solid currentColor;
+    border-radius: 50%;
+}
